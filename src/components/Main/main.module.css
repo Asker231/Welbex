@@ -1,0 +1,133 @@
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    padding:90px 0px;
+}
+.leftSection{
+ display: flex;
+ flex-direction: column;
+ gap: 30px;
+}
+.titles{
+    max-width: 362px;
+    color: #E4E5EA;
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    flex-direction: column;
+
+}
+#subTitle{
+   font-size: 48px;
+   font-weight: 900; 
+   color: inherit;
+   background: -webkit-linear-gradient(61deg,#FCAD47, #FE6469);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+.leftSection>p{
+    color: #E4E5E9;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 255px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.rightSection{
+    display: flex;
+    flex-direction: column;
+    gap:45px;
+    justify-content: end;
+    margin-top: 15px;
+    align-items: end;
+    
+}
+
+.rightTitle{
+   width: 291px;
+   color: white;
+   font-size: 18px;
+   text-align: end;
+
+}
+.rightTitle>span{
+
+    text-transform: uppercase;
+    color: inherit;
+    background: -webkit-linear-gradient(61deg,#FCAD47,#FE6469, #FCAD47);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 0.9px;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+.dashboards{
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 30px;
+    color: white;
+
+}
+.mobadash{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 224px;
+    gap: 12px;
+    font-size: 15px;
+    color: #E4E5E9;
+}
+
+.line{
+    display: none;
+    align-items: center;
+    gap: 3px;
+}
+
+
+@media (max-width:430px) {
+    .line{
+        display: flex;
+    }
+    main{
+        flex-direction: column;
+        padding: 40px 14px;
+        background: rgb(15,17,20);
+        background: linear-gradient(276deg, rgba(15,17,20,1) 0%, rgba(76,52,115,1) 36%, rgba(36,19,21,1) 100%);
+       backdrop-filter: blur(16px) saturate(180%);
+       -webkit-backdrop-filter: blur(16px) saturate(180%);
+    }
+    .titles{
+        font-size: 36px;
+        max-width: 272px;
+    }
+    #subTitle{
+        font-size: 36px;
+
+    }
+    .rightTitle{
+        text-align: start;
+    }
+
+    .rightSection{
+        align-items: start;
+    }
+    .dashboards{
+        display: none;
+    }
+}

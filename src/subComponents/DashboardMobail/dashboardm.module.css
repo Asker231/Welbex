@@ -1,0 +1,19 @@
+.dashs{
+    display: flex;
+    align-items: center;
+    color: #E4E5EA;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.65px;
+    text-transform: uppercase;
+}
+.dashs>span{
+    letter-spacing: 0.66px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+}

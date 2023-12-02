@@ -1,0 +1,26 @@
+.dash{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    max-width: 135px;
+}
+.dash>h2{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+
+}
+.dash>p{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+@media (max-width:430px){
+    .dash{
+        display: none;
+    }
+}
